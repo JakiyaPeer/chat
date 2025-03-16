@@ -13,9 +13,9 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // React frontend
-    methods: ["GET", "POST"],
-  },
+    origin: "http://localhost:5173", // Update with your frontend URL
+    methods: ["GET", "POST"]
+  }
 });
 
 // Middleware
